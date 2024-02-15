@@ -4,7 +4,7 @@ const { places , descriptors } = require('./seedHelper');
 const Campground = require('../modals/campground');
 
 mongoose.set('strictQuery', true);
-mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp')
+mongoose.connect('mongodb+srv://zantro20:StqJd9JSUfKl1KGL@placescluster.i9y5xho.mongodb.net/?retryWrites=true&w=majority')
 .then(()=>{
   console.log('Newwork connected');
 }).catch(
